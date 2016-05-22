@@ -23,12 +23,6 @@
 
     <dependencies>
 
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-</artifactId>
-            <version></version>
-        </dependency>
-
     </dependencies>
 
 </project>
