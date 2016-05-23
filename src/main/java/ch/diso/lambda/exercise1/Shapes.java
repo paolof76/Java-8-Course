@@ -7,7 +7,6 @@ import java.util.List;
  *
  * Each method should use a single call to shapes.forEach.
  */
-@SuppressWarnings("ALL")
 public class Shapes {
 
     /**

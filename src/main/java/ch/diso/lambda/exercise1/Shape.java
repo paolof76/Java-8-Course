@@ -3,7 +3,6 @@ package ch.diso.lambda.exercise1;
 /**
  * A simple shape, whose only attribute is a Color, which can be changed.
  */
-@SuppressWarnings("ALL")
 public class Shape {
 
     private Color color;
