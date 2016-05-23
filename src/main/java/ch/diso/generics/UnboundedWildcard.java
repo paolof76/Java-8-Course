@@ -16,7 +16,7 @@ public class UnboundedWildcard {
 
     /**
      * The goal of printList is to print a list of any type. To write a
-     * generic printList method, use List&lt;?&gt;:
+     * generic printList method, use <code>List&lt;?&gt;</code>:
      *
      * @param list
      *     List to be printed
