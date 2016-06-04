@@ -1,4 +1,4 @@
-package ch.diso.generics;
+package ch.diso.examples.generics;
 
 import java.util.Arrays;
 import java.util.List;

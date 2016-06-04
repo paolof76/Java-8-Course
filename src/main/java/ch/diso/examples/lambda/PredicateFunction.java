@@ -1,4 +1,4 @@
-package ch.diso.examples;
+package ch.diso.examples.lambda;
 
 import java.util.ArrayList;
 import java.util.Arrays;
