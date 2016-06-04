@@ -1,26 +1,19 @@
-package ch.diso.lambda.exercise2;
+package ch.diso.lambda;
 
-import ch.diso.lambda.FeatureMatchers;
-import org.junit.Test;
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.containsInAnyOrder;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.everyItem;
-import static org.hamcrest.Matchers.hasSize;
-import static org.hamcrest.Matchers.instanceOf;
-import static org.hamcrest.Matchers.is;
-import static org.hamcrest.Matchers.not;
+import ch.diso.lambda.exercise2.*;
+import ch.diso.lambda.util.FeatureMatchers;
 import org.hamcrest.Matcher;
-
-import static java.util.Arrays.asList;
-import static java.util.Arrays.binarySearch;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.function.Predicate;
+
+import static java.util.Arrays.asList;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
 
 /**
  * Exercise 2 - Filtering and Collecting
@@ -44,14 +37,14 @@ import java.util.function.Predicate;
  * <p>
  * This is a common pattern, and it's one that is made more concise with lambdas. The common parts of the pattern are:
  * <ul>
- *     <li>creating an empty, destination collection</li>
- *     <li>iterating over the entire source collection</li>
- *     <li>deciding whether to include each item, according to some test which evaluates to a boolean
- *         <ul>
- *             <li>items which pass the test are copied to the destination collection</li>
- *             <li>items which fail are ignored</li>
- *         </ul>
- *     </li>
+ * <li>creating an empty, destination collection</li>
+ * <li>iterating over the entire source collection</li>
+ * <li>deciding whether to include each item, according to some test which evaluates to a boolean
+ * <ul>
+ * <li>items which pass the test are copied to the destination collection</li>
+ * <li>items which fail are ignored</li>
+ * </ul>
+ * </li>
  * </ul>
  * </p>
  * <p>
@@ -65,7 +58,7 @@ import java.util.function.Predicate;
  * </p>
  * <p>
  * In post-JDK 8 code, one potential solution which matches the above problem is:
- *
+ * <p>
  * <pre>
  * {@code
  *     return otherThings.stream()
@@ -111,9 +104,6 @@ import java.util.function.Predicate;
  * @see java.util.stream.Collector
  * @see java.util.stream.Collectors
  * @see java.util.stream.Collectors#toList()
- *
- * Lambda Tutorial -- Adopt Open JDK
- * @author Graham Allan grundlefleck at gmail dot com
  */
 @SuppressWarnings("unchecked")
 public class VotingTest {
@@ -158,15 +148,16 @@ public class VotingTest {
      * help out the compiler with explicit generic arguments if you have to.
      * </p>
      */
-    @Test public void setOfVotersInDistrict() {
+    @Test
+    public void setOfVotersInDistrict() {
         List<RegisteredVoter> allVoters = new ArrayList<>(asList(
-            new RegisteredVoter("CR2345"),
-            new RegisteredVoter("HA7654"),
-            new RegisteredVoter("HA2213"),
-            new RegisteredVoter("BA9987"),
-            new RegisteredVoter("CR6203"),
-            new RegisteredVoter("ED9876")
-            // ... and many more
+                new RegisteredVoter("CR2345"),
+                new RegisteredVoter("HA7654"),
+                new RegisteredVoter("HA2213"),
+                new RegisteredVoter("BA9987"),
+                new RegisteredVoter("CR6203"),
+                new RegisteredVoter("ED9876")
+                // ... and many more
         ));
 
         Set<RegisteredVoter> votersInHackney =
@@ -184,7 +175,8 @@ public class VotingTest {
      * @see ElectoralDistrict#unspoiledBallots(Set)
      * @see Ballot#isSpoiled
      */
-    @Test public void removeAllSpoiledBallots() {
+    @Test
+    public void removeAllSpoiledBallots() {
         Set<Ballot> votes = new HashSet<>(asList(
                 Ballot.voteFor(Party.LABOUR),
                 Ballot.voteFor(Party.CONSERVATIVE),
@@ -211,15 +203,16 @@ public class VotingTest {
      *
      * @throws ClassNotFoundException If the lambdas binary build no longer contains the class
      */
-    @Test public void setOfVotersInDistrictInUnmodifiableSet() throws ClassNotFoundException {
+    @Test
+    public void setOfVotersInDistrictInUnmodifiableSet() throws ClassNotFoundException {
         List<RegisteredVoter> allVoters = new ArrayList<>(asList(
-            new RegisteredVoter("CR2345"),
-            new RegisteredVoter("HA7654"),
-            new RegisteredVoter("HA2213"),
-            new RegisteredVoter("BA9987"),
-            new RegisteredVoter("CR6203"),
-            new RegisteredVoter("ED9876")
-            // ... and many more
+                new RegisteredVoter("CR2345"),
+                new RegisteredVoter("HA7654"),
+                new RegisteredVoter("HA2213"),
+                new RegisteredVoter("BA9987"),
+                new RegisteredVoter("CR6203"),
+                new RegisteredVoter("ED9876")
+                // ... and many more
         ));
 
         Set<RegisteredVoter> votersInHackney =

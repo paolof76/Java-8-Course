@@ -1,4 +1,4 @@
-package ch.diso.lambda;
+package ch.diso.lambda.util;
 
 import org.hamcrest.FeatureMatcher;
 import org.hamcrest.Matcher;
