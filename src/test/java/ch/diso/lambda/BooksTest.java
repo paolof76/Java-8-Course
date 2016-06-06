@@ -1,10 +1,10 @@
 package ch.diso.lambda;
 
 
-import ch.diso.exercise.lambda.exercise3.Author;
-import ch.diso.exercise.lambda.exercise3.Book;
-import ch.diso.exercise.lambda.exercise3.Books;
-import ch.diso.exercise.lambda.exercise3.Publisher;
+import ch.diso.exercises.lambda.exercise3.Author;
+import ch.diso.exercises.lambda.exercise3.Book;
+import ch.diso.exercises.lambda.exercise3.Books;
+import ch.diso.exercises.lambda.exercise3.Publisher;
 import ch.diso.lambda.util.FeatureMatchers;
 import org.hamcrest.Matcher;
 import org.junit.Test;
@@ -61,7 +61,7 @@ import static org.hamcrest.Matchers.equalTo;
  * </pre>
  * </p>
  * <p>
- * As with the last exercise, we "open up" the Streams API by calling .stream() on a collection. This allows us to
+ * As with the last exercises, we "open up" the Streams API by calling .stream() on a collection. This allows us to
  * access the map() method.
  * </p>
  * <p>

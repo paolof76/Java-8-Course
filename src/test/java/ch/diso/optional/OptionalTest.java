@@ -1,6 +1,6 @@
 package ch.diso.optional;
 
-import ch.diso.exercise.optional.OptionalExercise;
+import ch.diso.exercises.optional.OptionalExercise;
 import org.junit.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
