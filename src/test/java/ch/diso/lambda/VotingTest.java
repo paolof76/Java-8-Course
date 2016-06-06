@@ -1,6 +1,6 @@
 package ch.diso.lambda;
 
-import ch.diso.lambda.exercise2.*;
+import ch.diso.exercise.lambda.exercise2.*;
 import ch.diso.lambda.util.FeatureMatchers;
 import org.hamcrest.Matcher;
 import org.junit.Test;

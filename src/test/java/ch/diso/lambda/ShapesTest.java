@@ -1,8 +1,8 @@
 package ch.diso.lambda;
 
-import ch.diso.lambda.exercise1.Color;
-import ch.diso.lambda.exercise1.Shape;
-import ch.diso.lambda.exercise1.Shapes;
+import ch.diso.exercise.lambda.exercise1.Color;
+import ch.diso.exercise.lambda.exercise1.Shape;
+import ch.diso.exercise.lambda.exercise1.Shapes;
 import ch.diso.lambda.util.FeatureMatchers;
 import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;

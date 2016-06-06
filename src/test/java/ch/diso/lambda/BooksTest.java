@@ -1,10 +1,10 @@
 package ch.diso.lambda;
 
 
-import ch.diso.lambda.exercise3.Author;
-import ch.diso.lambda.exercise3.Book;
-import ch.diso.lambda.exercise3.Books;
-import ch.diso.lambda.exercise3.Publisher;
+import ch.diso.exercise.lambda.exercise3.Author;
+import ch.diso.exercise.lambda.exercise3.Book;
+import ch.diso.exercise.lambda.exercise3.Books;
+import ch.diso.exercise.lambda.exercise3.Publisher;
 import ch.diso.lambda.util.FeatureMatchers;
 import org.hamcrest.Matcher;
 import org.junit.Test;
