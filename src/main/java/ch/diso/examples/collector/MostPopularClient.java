@@ -11,6 +11,9 @@ public class MostPopularClient {
         List<Integer> integers = Arrays.asList(1, 1, 2, 2, 2, 3, 4, 5, 5);
         List<Character> characters = Arrays.asList('a', 'b', 'c', 'c', 'c', 'd');
 
+        /**
+         * Welche Zahl, welches Zeichen kommt in der Liste am Häufigsten vor?
+         */
         showMostPopular(integers);
         showMostPopular(characters);
     }
