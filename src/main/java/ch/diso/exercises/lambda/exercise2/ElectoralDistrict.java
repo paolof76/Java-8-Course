@@ -4,9 +4,6 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Set;
 
-import static java.util.stream.Collectors.collectingAndThen;
-import static java.util.stream.Collectors.toSet;
-
 
 /**
  * Some (inaccurate) London electrical districts
@@ -34,11 +31,7 @@ public enum ElectoralDistrict {
     public static Set<RegisteredVoter> votersIn(ElectoralDistrict district, Collection<RegisteredVoter> voters) {
         // [your code here]
 
-        return voters.stream()
-                .filter(v -> v.getElectorId().startsWith(district.prefix))
-                .collect(collectingAndThen(toSet(), Collections::unmodifiableSet));
-
-        // return Collections.emptySet();
+        return Collections.emptySet();
     }
 
     /**

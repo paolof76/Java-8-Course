@@ -14,6 +14,7 @@ public class ConsumerFunction {
 
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(1, 3, 5, 7, 9);
-        forEach(list, System.out::println); // (Integer i) -> System.out.println(i)
+        forEach(list, System.out::println);
     }
 }
+
