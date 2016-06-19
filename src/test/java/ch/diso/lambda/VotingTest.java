@@ -221,7 +221,7 @@ public class VotingTest {
         assertThat(votersInHackney, instanceOf(Class.forName("java.util.Collections$UnmodifiableSet")));
     }
 
-    // Test helpers
+    // NotNullTest helpers
 
     private static Matcher<Person> aPersonNamed(String name) {
         return FeatureMatchers.from(

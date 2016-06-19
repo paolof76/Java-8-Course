@@ -104,7 +104,7 @@ public class ShapesTest {
         assertThat(builder.toString(), equalTo("[a BLUE shape][a BLACK shape][a YELLOW shape]"));
     }
 
-    // ----- Test helpers -----
+    // ----- NotNullTest helpers -----
 
     private static Matcher<Shape> hasColor(Color color) {
         return FeatureMatchers.from(Matchers.is(color), "has color", "color", Shape::getColor);

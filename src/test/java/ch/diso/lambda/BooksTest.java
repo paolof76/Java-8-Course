@@ -161,7 +161,7 @@ public class BooksTest {
                 containsInAnyOrder(publisherNamed("Addison-Wesley"), publisherNamed("John Wiley & Sons")));
     }
 
-    // Test helpers
+    // NotNullTest helpers
 
     private static Matcher<Publisher> publisherNamed(String name) {
         return FeatureMatchers.from(equalTo(name), "is named", "name", publisher -> publisher.getName());
