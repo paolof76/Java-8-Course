@@ -1,4 +1,4 @@
-package ch.diso.lambda.util;
+package ch.diso.lambda;
 
 import org.junit.Test;
 
