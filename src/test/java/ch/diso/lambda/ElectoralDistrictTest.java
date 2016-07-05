@@ -106,7 +106,7 @@ import static org.hamcrest.Matchers.*;
  * @see java.util.stream.Collectors#toList()
  */
 @SuppressWarnings("unchecked")
-public class VotingTest {
+public class ElectoralDistrictTest {
 
     /**
      * Use <code>Stream.filter()</code> to produce a list containing only those
